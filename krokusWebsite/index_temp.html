@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index_temp.html">Temperature</a>
+                        <a class="dropdown-item" href="index_humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="index_cloud.html">Cloudiness</a>
+                        <a class="dropdown-item" href="index_wind.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index_data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--Actual Stuff-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card border-primary mb-3">
+                    <div style="text-align: center;" class="card-header card_header_override">Temperature Analysis</div>
+                    <div class="card-body">
+                        <h4 style="text-align: center;" class="card-title">Latitude vs. Temperature</h4>
+                        <img src="../krokusWebsite/krokusImages/Fig1.png" width="750" height="450" style="vertical-align:middle;margin:0px 100px">
+                        <p class="card-text"> Northern Hemisphere Temperatures (.796) and Southern Hemisphere Temperatures (.659) vs. Latitude R-Squared means that my model explains 79.6% and 65.9% of the variation within the data respectively. The previous statement is very
+                            evident in the Latitude vs Temperature Scatter Plot where a parabolic curve takes shape. This makes sense because it tends to be warmer near the equator and cooler near the north or south poles in the higher (absolute value)
+                            latitudes.
+                        </p>
+                        <p>
+                            scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters. Deadlights
+                            jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay
+                            yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-primary mb-3">
+                    <div style="text-align: center;" class="card-header card_header_override">Visualizations</div>
+                    <div class="card-body">
+                        <h4 style="text-align: center;" class="card-title">Four Comparisons (Latitude vs. ...)
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="index_temp.html">
+                                        <img class="image_inline image_clickable" src="../krokusWebsite/krokusImages/Fig1.png">
+                                    </a>
+                                    <p style="text-align:center" ; class="subtitle">Temperature (Fig. 1)
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="index_humidity.html">
+                                        <img class="image_inline image_clickable" src="../krokusWebsite/krokusImages/Fig2.png">
+                                    </a>
+                                    <p style="text-align:center" ; class="subtitle">Humidity (Fig. 2)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="index_cloud.html">
+                                        <img class="image_inline image_clickable" src="../krokusWebsite/krokusImages/Fig3.png">
+                                    </a>
+                                    <p style="text-align:center" ; class="subtitle">Cloud (Fig. 3)
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="index_wind.html">
+                                        <img class="image_inline image_clickable" src="../krokusWebsite/krokusImages/Fig4.png">
+                                    </a>
+                                    <p style="text-align:center" ; class="subtitle">Wind Speed (Fig. 4)
+                                    </p>
+                                </div>
+                            </div>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div style="text-align:center" class="container-fluid" style="background-color: dodgerblue;">
+            <span class="text-muted">Website Created by Christopher Moore Krokus</span>
+        </div>
+    </footer>
+</body>
+
+</html>

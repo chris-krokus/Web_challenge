@@ -1,0 +1,25 @@
+.navbar-brand {
+    font-size: 60px;
+    font-weight: bold;
+    background-color: teal;
+    color: gray;
+}
+
+.card_header_override {
+    font-size: 60px;
+    font-style: italic;
+    background-color: cornflowerblue;
+}
+
+.image_inline {
+    display: inline-block;
+    width: 100%;
+}
+
+.image_fit {
+    height: auto;
+}
+
+.image_fluid {
+    width: 100%;
+}
